@@ -1,0 +1,104 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:polymer_elements/iron_flex_layout/classes/iron_flex_layout.dart",
+        "5": false
+      },
+      {
+        "1": "package:polymer_elements/iron_icons.dart",
+        "5": false
+      },
+      {
+        "1": "package:polymer_elements/paper_header_panel.dart",
+        "5": false
+      },
+      {
+        "1": "package:polymer_elements/paper_toolbar.dart",
+        "5": false
+      },
+      {
+        "1": "package:polymer_elements/paper_icon_button.dart",
+        "5": false
+      },
+      {
+        "1": "../board_view/board_view.dart",
+        "5": false
+      },
+      {
+        "1": "../message_bar/message_bar.dart",
+        "5": false
+      },
+      {
+        "1": "../../model/ttt_board.dart",
+        "5": false
+      },
+      {
+        "1": "../test1/test1.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MainApp",
+        "7": [
+          {
+            "2": "BoardView"
+          },
+          {
+            "2": "MessageBar"
+          },
+          {
+            "2": "Test1"
+          }
+        ]
+      }
+    ],
+    "6": "main_app.dart"
+  },
+  "type": {
+    "MainApp": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "main-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MainApp",
+        "moduleUrl": "asset:tic_tac_toe/lib/views/main_app/main_app.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 1,
+        "template": "<style>\r\n  .content {\r\n    padding: 15px;\r\n  }\r\n\r\n  .app-title {\r\n    text-align: center;\r\n  }\r\n\r\n  message-bar {\r\n    margin-bottom: 10px;\r\n  }\r\n</style>\r\n\r\n\r\n<paper-header-panel class=\"flex\">\r\n  <paper-toolbar>\r\n    <div class=\"flex-auto\">\r\n      <div style=\"width: 40px; height: 40px;\"></div>\r\n    </div>\r\n    <h2 class=\"app-title flex-auto\">Tic-Tac-Toe</h2>\r\n    <div class=\"flex-auto\" style=\"text-align: right;\">\r\n      <paper-icon-button icon=\"refresh\" (click)=\"newGame()\">\r\n      </paper-icon-button>\r\n    </div>\r\n  </paper-toolbar>\r\n<div class=\"layout vertical center content\">\r\n  <message-bar [width]=\"boardSize\" [message]=\"message\"></message-bar>\r\n\r\n  <board-view [size]=\"boardSize\"\r\n              [model]=\"board\"\r\n              [currentPlayer]=\"currentPlayer\"\r\n              [interfaceEnabled]=\"interfaceEnabled\"\r\n              (win)=\"onWin($event)\" (tie)=\"onTie()\" (move)=\"nextTurn()\">\r\n  </board-view>\r\n</div>\r\n<div>\r\n  <test1></test1>\r\n</div>\r\n</paper-header-panel>\r\n\r\n\r\n\r\n",
+        "templateUrl": "asset:tic_tac_toe/lib/views/main_app/main_app.html",
+        "styles": [
+          "\n  .content {\n    padding: 15px;\n  }\n\n  .app-title {\n    text-align: center;\n  }\n\n  message-bar {\n    margin-bottom: 10px;\n  }\n"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

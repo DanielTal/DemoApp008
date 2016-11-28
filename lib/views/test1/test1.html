@@ -1,0 +1,21 @@
+<style is="custom-style" include="demo-pages-shared-styles">
+  paper-dropdown-menu, paper-listbox {
+    width: 250px;
+  }
+  paper-dropdown-menu {
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
+</style>
+
+<div>
+    <paper-spinner active class="thick"></paper-spinner>
+    <paper-button raised class="indigo">raised</paper-button>
+
+    <paper-dropdown-menu label="עיר">
+    <paper-listbox class="dropdown-content" selected="1">
+        <paper-item *ngFor="let item of list1">{{item.Name}}</paper-item>
+    </paper-listbox>
+    </paper-dropdown-menu>    
+</div>

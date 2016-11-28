@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "TTTBoard": {
+      "class": "Identifier",
+      "name": "TTTBoard",
+      "moduleUrl": "asset:tic_tac_toe/lib/model/ttt_board.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

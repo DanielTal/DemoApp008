@@ -1,0 +1,29 @@
+<style>
+  .square {
+    outline: 1px solid black;
+    cursor: default;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .highlight {
+    background-color: lightblue;
+  }
+</style>
+
+<paper-material elevation="1" class="layout horizontal wrap"
+                [style.width.px]="boardSize">
+  <div *ngFor="let square of model.board; let i = index"
+       class="square layout vertical center center-justified"
+       [class.highlight]="interfaceEnabled && model.isSquareEmpty(i)"
+       (click)="squareSelected(i)"
+       [ngStyle]="squareStyles">
+    {{square}}
+  </div>
+
+
+</paper-material>

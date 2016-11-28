@@ -1,0 +1,92 @@
+{
+  "ngDeps": {
+    "1": "reflectable_generated_main_library",
+    "3": [
+      {
+        "1": "dart:core",
+        "5": false
+      },
+      {
+        "1": "index.bootstrap.initialize_reflectable_original_main.dart",
+        "2": [
+          "main"
+        ],
+        "4": "original",
+        "5": false
+      },
+      {
+        "1": "dart:html",
+        "4": "prefix5",
+        "5": false
+      },
+      {
+        "1": "package:polymer/polymer_micro.dart",
+        "4": "prefix2",
+        "5": false
+      },
+      {
+        "1": "package:polymer/src/common/js_proxy.dart",
+        "4": "prefix0",
+        "5": false
+      },
+      {
+        "1": "package:polymer/src/common/polymer_mixin.dart",
+        "4": "prefix1",
+        "5": false
+      },
+      {
+        "1": "package:polymer/src/common/polymer_serialize.dart",
+        "4": "prefix3",
+        "5": false
+      },
+      {
+        "1": "package:polymer_interop/src/polymer_base.dart",
+        "4": "prefix4",
+        "5": false
+      },
+      {
+        "1": "package:reflectable/mirrors.dart",
+        "4": "m",
+        "5": false
+      },
+      {
+        "1": "package:reflectable/src/reflectable_transformer_based.dart",
+        "4": "r",
+        "5": false
+      },
+      {
+        "1": "package:reflectable/reflectable.dart",
+        "2": [
+          "isTransformed"
+        ],
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "index.bootstrap.initialize_reflectable_original_main.dart",
+        "3": [
+          "main"
+        ]
+      }
+    ],
+    "6": "index.bootstrap.initialize.dart"
+  },
+  "type": {
+    "main": {
+      "class": "Identifier",
+      "name": "main",
+      "moduleUrl": "asset:tic_tac_toe/web/index.bootstrap.initialize.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_initializeReflectable": {
+      "class": "Identifier",
+      "name": "_initializeReflectable",
+      "moduleUrl": "asset:tic_tac_toe/web/index.bootstrap.initialize.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
